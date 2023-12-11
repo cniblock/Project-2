@@ -62,7 +62,7 @@ h4{
     max-width: 1400px;
     height: 1220px;
     display: block;
-    width: 90%;
+    width: 95%;
     margin-top: 10px;
     display: flex;
 }
@@ -224,6 +224,12 @@ h4{
     text-align: center;
 }
 
+@media (max-width: 1030px) {
+    .add-box {
+        font-size: 0.8em;
+    }
+}
+
 @media (max-width: 760px) {
     h1{
         font-size: 36px;
@@ -233,13 +239,13 @@ h4{
     }
 }
 
-@media (max-width: 744px) {
+@media (max-width: 754px) {
     .add-box {
         font-size: 0.8em;
     }
 }
 
-@media (max-width: 652px) {
+@media (max-width: 659px) {
     .content-box{
         display: flex;
         flex-direction: column;
@@ -247,6 +253,7 @@ h4{
     .column-1{
         order: 1;
         width:  95%;
+        flex-grow: 1;
     }
     .column-2{
         order: 2;
