@@ -14,6 +14,18 @@ h1{
     font-size: 3em;
   }
 
+h2{
+    font-size: 1em;
+}
+
+h3{
+    font-size: 22px;
+}
+
+h4{
+    font-size: 18px;
+}
+
 /* Nav Bar and Hero image */
 
 .hero-container {
@@ -50,7 +62,7 @@ h1{
     max-width: 1400px;
     height: 1220px;
     display: block;
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
     display: flex;
 }
@@ -66,7 +78,7 @@ h1{
 .column-2 {
     margin: 5px;
     border: 2px solid slategray;
-    width: 65%;
+    width: 60%;
     height: 1200px;
     border-radius: 5px;
 }
@@ -85,6 +97,7 @@ h1{
     justify-content: center;
     align-items: center;
     background-color: rgb(210, 210, 210);
+    font-size: 1em;
 }
 
 .add-btn {
@@ -111,12 +124,74 @@ h1{
 .task-box {
     border: 2px solid slategray;
     border-radius: 5px;
-    margin: 5px;
+    margin-top: 15px;
     width: 95%;
-    height: 150px;
+    height: 200px;
     margin-left: auto;
     margin-right: auto;
+}
 
+.task-box-row {
+    border: 2px solid slategray;
+    border-radius: 5px;
+    height: 30%;
+    display: flex;
+    margin-top: 4px;
+}
+
+.task-content{
+    border: 2px solid slategray;
+    border-radius: 5px;
+    height: 30%;
+}
+
+.task-box-col {
+    border: 2px solid slategray;
+    border-radius: 5px;
+    margin: 1px;
+    width: 50%;
+}
+
+.col-1{
+    width: 80%;
+}
+
+.col-2 {
+    width: 20%;
+}
+
+/* Task Content column */
+
+.top-row {
+    border: 1px solid slategray;
+    display: flex;
+    height: 5%;
+}
+
+.task-title {
+    border: 1px solid slategray;
+    font-size: 30px;
+    width: 80%;
+    height: 100%;
+}
+
+.task-prio {
+    border: 1px solid slategray;
+    width: 20%;
+    font-size: 25px;
+    height: 100%;
+}
+
+.task-body {
+    border: 1px solid slategray;
+    font-size: 25px;
+    height: 80%;
+}
+
+.task-timescale {
+    border: 1px solid slategray;
+    font-size: 25px;
+    height: 5%;
 }
 
 /* footer */
@@ -147,4 +222,58 @@ h1{
     font-size: 20px;
     font-weight: bold; 
     text-align: center;
+}
+
+@media (max-width: 760px) {
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 744px) {
+    .add-box {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 652px) {
+    .content-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .column-1{
+        order: 1;
+        width:  95%;
+    }
+    .column-2{
+        order: 2;
+        width:  95%;
+    }
+
+    .add-box {
+        font-size: 1em;
+    }
+
+    .top-row{
+        height: 50px;
+    }
+
+    .hero-text {
+        top: 20%;
+    }
+}
+
+@media (max-width: 474px) {
+    h1{
+        font-size: 26px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .hero-text {
+        top: 10%;
+    }
 }
