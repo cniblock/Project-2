@@ -24,24 +24,24 @@
                     <button class="add-btn">Add New Task</button>
                     <button class="sort-btn">Sort By</button>
                 </div>
-                <div class="task-box task-box-selected">
+                <div class="notes">
                     <div class="task-box-row">
-                        <div class="task-box-col col-1"><h3>TITLE</h3></div>
-                        <div class="task-box-col col-2"><h4>PRI</h4></div>
+                        <div class="task-box-col col-1" id="task-box-title"><h3>TITLE</h3></div>
+                        <div class="task-box-col col-2" id="task-box-prio"><h4>PRI</h4></div>
                     </div>
-                    <div class="task-content"><h4>TASK BODY</h4></div>
+                    <div class="task-content" id="task-box-body"><h4>TASK BODY</h4></div>
                     <div class="task-box-row">
-                        <div class="task-box-col col-3"><h5>DATE</h5></div>
-                        <div class="task-box-col col-4"><h5>TIMESCALE</h5></div>
+                        <div class="task-box-col col-3" id="task-box-date"><h5>DATE</h5></div>
+                        <div><button class="note-btn">Delete</button><button class="note-btn edit-btn">Edit</button></div>
                     </div>
                 </div>
             </div>
             <div class="column-2">
                 <div class="top-row">
-                    <input class="task-title" type="text" placeholder="Enter a title...">
+                    <input class="task-title" id="note-title" type="text" placeholder="Enter a title...">
                     <div class="task-prio"><h4>Task Prio</h4></div>
                 </div>
-                    <textarea class="task-body">Enter your task notes here...</textarea>
+                    <textarea class="task-body" id="note-body">Enter your task notes here...</textarea>
                 <div class="task-timescale"><h4>Timescale</h4></div>
             </div>
         </div>
