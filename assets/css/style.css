@@ -131,6 +131,7 @@ h5{
 .task-box {
     border: 2px solid slategray;
     border-radius: 5px;
+    background-color: rgb(255, 255, 235);
     margin-top: 15px;
     width: 95%;
     height: 200px;
@@ -138,23 +139,22 @@ h5{
     margin-right: auto;
 }
 
+.task-box-selected {
+    background-color: rgb(250, 250, 213);
+    border: 2px solid rgb(87, 97, 108);
+}
+
 .task-box-row {
-    border: 2px solid slategray;
-    border-radius: 5px;
     height: 30%;
     display: flex;
     margin-top: 4px;
 }
 
 .task-content{
-    border: 2px solid slategray;
-    border-radius: 5px;
     height: 30%;
 }
 
 .task-box-col {
-    border: 2px solid slategray;
-    border-radius: 5px;
     margin: 1px;
     width: 50%;
 }
@@ -180,6 +180,7 @@ h5{
     font-size: 30px;
     width: 80%;
     height: 100%;
+    padding: 5px;
 }
 
 .task-prio {
@@ -193,6 +194,8 @@ h5{
     border: 1px solid slategray;
     font-size: 25px;
     height: 80%;
+    width: 100%;
+    padding: 10px;
 }
 
 .task-timescale {
