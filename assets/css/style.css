@@ -15,15 +15,22 @@ h1{
   }
 
 h2{
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 h3{
-    font-size: 22px;
+    font-size: 30px;
+    padding: 10px;
 }
 
 h4{
-    font-size: 18px;
+    font-size: 26px;
+    padding: 10px;
+}
+
+h5{
+    font-size: 20px;
+    padding: 10px;
 }
 
 /* Nav Bar and Hero image */
@@ -105,7 +112,7 @@ h4{
     padding: 10px 20px;
     font-size: 1.5em;
     border-radius: 15px;
-    background-color: rgb(96, 96, 96);
+    background-color: rgb(6, 188, 0);
     color: white;
     text-shadow: 1px 1px 4px rgb(0, 0, 0);
 }
@@ -245,7 +252,7 @@ h4{
     }
 }
 
-@media (max-width: 659px) {
+@media (max-width: 759px) {
     .content-box{
         display: flex;
         flex-direction: column;
@@ -253,7 +260,7 @@ h4{
     .column-1{
         order: 1;
         width:  95%;
-        flex-grow: 1;
+        flex: 1;
     }
     .column-2{
         order: 2;
